@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    
+    <title>CSS materialize</title>
+
+
+    <style>
+        nav .badge{
+            position: relative;
+            top: 20px;
+            right: 20px;
+        }
+        /* div .card{
+            left: 40px;
+            height: 150px;
+            width: 300px;
+        } */
+    </style>
+
+</head>
+<body>
+    <!-- <h1>Materialize</h1> -->
+
+    <!-- <div class="container"> -->
+        <!-- <h1>Hello Ninja..</h1>
+        <h3>H3 Hello Ninja..</h3>
+        <h2>H2 Hello Ninja..</h2>
+        <p>This is paragraph</p>
+        <p class="flow-text">This flow text</p> -->/
+
+
+        <!-- Hide function -->
+        <!-- <h4 class="">ICONS</h4>
+        <i class="material-icons grey-text">cloud</i> -->
+
+         
+
+    <!-- </div> -->
+
+
+    <nav class="nav-wraper indigo">
+        <div class="container">
+            <a href="#" class="brand-logo ">BMW</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">SignUp/Login</a></li>
+                <li><a href="#" class="btn-floating indigo darken-4 pulse">
+                    <i class="material-icons">notifications</i>
+                </a></li> 
+                <!-- badge use  -->
+                <li><span class="badge white-text pink">5 new</span></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Use of carda  -->
+    <div>
+        <div class="row">
+            <div class="col s12 l2">
+                <div class="card">
+
+                    <div class="card-image">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg?crop=0.982xw:0.736xh;0,0.189xh&resize=980:*" alt="">
+                        <a href="#" class="halfway-fab btn-floating pink lighten-2 pulse"><i class="material-icons">favorite</i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Fruits </span>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam id ea, nam ratione eos? Facere dolorum perspiciatis ad, velit reiciendis, rerum et exercitationem, nulla cumque voluptate magnam fuga esse?</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More options</a>
+                        <a href="#">View Ingredients</a>
+                    </div>
+                </div>
+
+                <!-- another card  -->
+                
+            </div>
+            <div>
+                <div class="col s12 l6">
+                    <div class="card">
+
+                        <div class="card-image">
+                            <img src="https://myfoodstory.com/wp-content/uploads/2020/10/Dhaba-Style-Chicken-Curry-1-1024x1536.jpg" alt="">
+                            <a href="#" class="halfway-fab btn-floating pink lighten-2 pulse"><i class="material-icons">favorite</i></a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Chicken Kawabs</span>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam id ea, nam ratione eos? Facere dolorum perspiciatis ad, velit reiciendis, rerum et exercitationem, nulla cumque voluptate magnam fuga esse?</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">More options</a>
+                            <a href="#">View Ingredients</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav()
+        })
+    </script>
+</body>
+</html>

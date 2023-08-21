@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        
+        <title>myProject</title>
+        <style>
+            .section{
+                padding-top: 4vw; 
+                padding-bottom: 4vw;   
+                /* vw is viewport width  */
+            }
+            header{
+                background: url(img1/girl2.jpg);
+                background-size: cover;
+                background-position: center;
+                min-height: 2200px;
+            }
+            @media screen and (max-width: 670px) {
+                header{
+                    min-height: 500px;
+                }
+            }
+            .tabs .indicator{
+                background-color: #1a237e;
+            }
+            .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+            }
+        </style>
+        
+        </head>
+        
+        <body>
+            <!-- navbar -->
+            <header>
+                <nav class="nav-wrapper transparent">
+                    <div class="container">
+                        <a href="#" class="brand-logo pink-text text-lighten-3">Only4U</a>
+                        <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons pink-text text-lighten-2">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#crave" class="pink-text text-lighten-3">Crave4? XD</a></li>
+                            <li><a href="#services" class="pink-text text-lighten-3">Services</a></li>
+                            <li><a href="#contact" class="pink-text text-lighten-3">Contact</a></li>
+
+                             <!-- ICONS  -->
+                        <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-tooltip="Facebook">
+                            <i class="fab fa-facebook pink-text text-lighten-3"></i>
+                        </a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-tooltip="Instagram">
+                            <i class="fab fa-instagram pink-text text-lighten-3"></i>
+                        </a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-tooltip="Twitter">
+                            <i class="fab fa-twitter pink-text text-lighten-3"></i>
+                        </a></li>
+                        </ul> 
+
+
+                        
+
+
+                        <ul class="sidenav grey lighten-2" id="mobile-menu">
+                            <li><a href="#" class="pink-text text-lighten-3">Crave4? XD</a></li>
+                            <li><a href="#services" class="pink-text text-lighten-3">Services</a></li>
+                            <li><a href="#contact" class="pink-text text-lighten-3">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+                    
+            </header>
+    
+            <!-- photo / grid  -->
+            <section class="container section scrollspy" id="crave">
+                <div class="row">
+                    <div class="col s12 l4 offset-l1">
+                        <img src="img1/girl7.jpg" alt="" class="responsive-img materialboxed"> <!-- responsive img mostly fit image according to 4 columns-->
+
+                    </div>
+                    <div class="col s12 l4 push-l2">
+                        <h2 class="indigo-text text-darken-2">Model 1</h2>
+                        <p>She has seducing eyes</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l4 push-l7 offset-l1" >
+                        <img src="img1/girl5.jpg" alt="" class="responsive-img materialboxed" > <!-- responsive img mostly fit image according to 4 columns-->
+
+                    </div>
+                    <div class="col s12 l6 pull-l5 right-align">
+                        <h2 class="indigo-text text-darken-2">Model 2</h2>
+                        <p>She is JUST!! Ravishing</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l4 offset-l1">
+                        <img src="img1/lanarhodes.jpg" alt="" class="responsive-img materialboxed"> <!-- responsive img mostly fit image according to 4 columns-->
+
+                    </div>
+                    <div class="col s12 l6 push-l2">
+                        <h2 class="indigo-text text-darken-2">Model 3</h2>
+                        <p>She is Hot as fcuk</p>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- services / tabs  -->
+            <section class="section container scrollspy" id="services">
+                <div class="row">
+                    <div class="col s12 l4">
+                        <h2 class="indigo-text text-darken-2">What U Actually Desire</h2>
+                        <p>meditate and ask what you actually need... <br> we are here to make love from inner U
+                        </p>
+                    </div>
+                    <div class="col s12 l6 offset-l2">
+                        <!-- tabs -->
+                        <ul class="tabs">
+                            <li class="tab col s6">
+                                <a href="#photography" class="active indigo-text text-darken-2">Photography</a>
+                            </li>
+                            <li class="tab col s6">
+                                <a href="#editing" class="active indigo-text text-darken-2">Editing</a>
+                            </li>
+                        </ul>
+                        <div id="photography" class="col s12">
+                            <p class="flow-text indigo-text text-darken-4">Photography</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+                        </div>  
+                        <div id="editing" class="col s12">
+                            <p class="flow-text indigo-text text-darken-4">Editing</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- parallax  -->
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/download_img.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
+            <div class="container">
+                <p>"This revealing, moving, and often surprising collection lets you go deep inside the lives of generations of porn stars and explicit performers. It’s an absolute must-read for anyone interested in sex industry politics, sex-positive culture, and porn studies — and for anyone whose friend, lover, or family member has taken their pants off in front of a camera. One after the other, these memoirs add up to a powerful, if ironic, conclusion: Porn stigma is the biggest problem many adult performers face, and it is at least as likely to come from our feminist moms as from prudish conservatives. Once you’ve heard the clear, articulate voices of these porn stars, you’ll never look at a sex movie, or the people who make it happen, the same way again."</p>
+            </div>
+
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/beauty.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
+            <div class="container">
+                <p>"Jenna Jameson played a radio guest in the Howard Stern biopic Private Parts,while Sasha Grey was the female lead in The Girlfriend Experience. In 2013, James Deen played the male lead in The Canyons, an indie film written by Bret Easton Ellis, with Lindsay Lohan playing the female lead. So I would say Sasha Grey, Jenna Jameson, and Traci Lords are all strong contenders, as is James Dean. Looking at the list on Wikipedia, there are more strong contenders as well. Jenna Haze starred alongside Jason Statham in Crank: High Voltage for example. Like I said, it really depends on what you consider mainstream success."</p>
+            </div>
+
+
+            <!-- contact forms -->
+            <section class="section container scrollspy" id="contact">
+                <div class="row">
+                    <div class="col s12 l5">
+                      <h2 class="indigo-text text-darken-4">We'are Only4U just contact us..</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                       <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                    
+                    </div>
+                    <div class="col s12 l5 offset-l2">
+                        <form action="">
+                            <div class="input-field">
+                                <i class="material-icons prefix blue-text text-darken-4">email</i>
+                                <input type="email" id="email">
+                                <label for="email">Your Email</label>
+                            </div>
+                       
+                            <div class="input-field">
+                                <i class="material-icons prefix blue-text text-darken-4">message</i>
+                                <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                                <label for="message">Type your message</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix blue-text text-darken-4">date</i>
+                                <input type="text" id="date" class="datepicker">
+                                <label for="date">Choose your date you need me 4..</label>
+                            </div>
+                            <div class="input-field">
+                                <p>Services Required..</p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Outcall Service(delivery)</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>4making love with desire..</span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="input-field center">
+                                <button class="btn blue darken-4">Submit</button>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- footer  -->
+            <footer class="page-footer grey darken-3">
+                <div class="container">
+                  <div class="row">
+                    <div class="col l6 s12">
+                      <h5>About Me</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                      <h5 class="white-text">Connect</h5>
+                      <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-copyright grey darken-4">
+                  <div class="container center-align">&copy; 2023 Only4U</div>
+                </div>
+              </footer>
+    
+            <!-- Compiled and manified JavaScript  -->
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    
+            <!-- to initialize the use of #ID need function  -->
+            <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.materialboxed').materialbox();
+                $('.parallax').parallax();
+                $('.tabs').tabs();
+                $('.datepicker').datepicker({
+                    disableWeekends :true  
+                    // just note this 
+                });
+                $('.tooltipped').tooltip();
+                $('.scrollspy').scrollSpy();
+            }
+            )
+            </script>
+        </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ 
+     <!-- Compiled and minified JavaScript -->
+     
+     <title>CSS materialize</title>
+ 
+ 
+</head>
+<body>
+    <div class="container">
+        <h2>Modals</h2>
+        <a href="#terms" class="btn green modal-trigger">Terms & Condition</a>
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms & Condition</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda fugit fugiat veniam eum quia officia quod? Sed illum quo delectus.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn blue">Back</a>
+                <a href="#" class="modal-close btn blue">agree and continue</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Intializing modal 
+        $(document).ready(function(){
+          $('.modal').modal()
+        }
+        )
+    </script>
+</body>
+</html>
